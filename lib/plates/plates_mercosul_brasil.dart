@@ -14,7 +14,7 @@ class PlateMercosulBrazil extends PlateMercosul {
     return false;
   }
 
-  String correctReadingError(String id) {
+  correctReadingError(String id) {
     String idFormatted = '';
     List ids = id.codeUnits.map((unit) {
       return String.fromCharCode(unit);
@@ -29,6 +29,6 @@ class PlateMercosulBrazil extends PlateMercosul {
 
       idFormatted = idFormatted + item;
     });
-    return idFormatted;
+    id = idFormatted;
   }
 }
