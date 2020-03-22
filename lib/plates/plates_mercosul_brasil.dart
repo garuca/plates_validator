@@ -29,6 +29,6 @@ class PlateMercosulBrazil extends PlateMercosul {
 
       idFormatted = idFormatted + item;
     });
-    id = idFormatted;
+    this.id = idFormatted;
   }
 }
