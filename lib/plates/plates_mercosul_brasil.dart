@@ -1,10 +1,10 @@
 import 'package:platesvalidator/plates/plate_mercosul.dart';
 
-class PlateMercosulBrasil extends PlateMercosul {
-  PlateMercosulBrasil(String id) : super(id);
+class PlateMercosulBrazil extends PlateMercosul {
+  PlateMercosulBrazil(String id) : super(id);
   @override
-  bool validade() {
-    if (super.validade()) {
+  bool validate() {
+    if (super.validate()) {
       RegExp regExp = new RegExp(
         r"[A-Z]{3}[0-9]{1}[A-Z]{1}[0-9]{2}",
       );
